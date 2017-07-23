@@ -19,7 +19,7 @@ class MKKartDetailAdapter(val context: Context, var storeItems: MutableList<MKSt
         holder?.itemView?.txtProductName?.text=storeItems.get(position).name;
         val quantity=storeItems.get(position).count
         holder?.itemView?.txtCount?.text="Quantity=  $quantity";
-        holder?.itemView?.txtProductPrice?.text=(storeItems.get(position).price*quantity).toString();
+        holder?.itemView?.txtProductPrice?.text="Price= "+storeItems.get(position).price*quantity;
         holder?.itemView?.btnPlus?.setOnClickListener{
             kartAddRemoveListner?.onAddRemove(position, true)
         }

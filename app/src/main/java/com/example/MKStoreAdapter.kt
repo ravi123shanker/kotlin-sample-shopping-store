@@ -18,7 +18,7 @@ class MKStoreAdapter(val context: Context, var storeItems: MutableList<MKStoreIt
     override fun onBindViewHolder(holder: MKStoreViewHolder?, position: Int) {
         holder?.itemView?.txtProductName?.text=storeItems.get(position).name;
         holder?.itemView?.txtProductDes?.text=storeItems.get(position).description;
-        holder?.itemView?.txtProductPrice?.text=storeItems.get(position).price.toString();
+        holder?.itemView?.txtProductPrice?.text="Price= "+storeItems.get(position).price;
         when (storeItems.get(position).isSelected){
             true ->  holder?.itemView?.btnAddRemove?.text= "Remove"
             false -> holder?.itemView?.btnAddRemove?.text= "Add"
