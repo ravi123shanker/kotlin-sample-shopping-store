@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/flKart"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imgKart"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_margin="10dp"
+               android:src="@drawable/ic_kart"/>
+    <TextView android:id="@+id/txtKartValue"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:layout_gravity="right"
+              android:layout_marginRight="15dp"
+              android:layout_marginTop="15dp"
+              android:text="0"
+              android:textStyle="bold"
+              android:visibility="gone"
+              android:textColor="@android:color/holo_red_light"/>
+
+</FrameLayout>
