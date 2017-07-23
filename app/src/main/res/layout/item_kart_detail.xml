@@ -34,13 +34,13 @@
             android:layout_centerVertical="true">
         <Button android:id="@+id/btnMinus"
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="-"/>
         <Button android:id="@+id/btnPlus"
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="+"/>
