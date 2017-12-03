@@ -27,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupStoreData(){
-        for (i in 1..30){
+        for (i in 1..20){
             storeItems?.add(MKStoreItem("Item $i", "description $i", i, 30.50f+i,0, false))
         }
         adapter= MKStoreAdapter(this, storeItems);
